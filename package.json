@@ -1,0 +1,41 @@
+{
+    "name": "buzhi",
+    "version": "2.0.0",
+    "description": "This is a arkai blog template",
+    "main": "index.js",
+    "scripts": {
+        "watch": "gulp watch",
+        "gulp": "gulp",
+        "serve": "live-server dist --wait=0",
+        "sass": "node-sass src/scss/style.scss dist/assets/css/style.css --output-style=expanded --source-map-root file://${PWD}/ --source-map-embed true",
+        "sass-watch": "node-sass -w src/scss/style.scss dist/assets/css/style.css --output-style=expanded --source-map-root file://${PWD}/ --source-map-embed true",
+        "start": "concurrently \"npm run watch\" \"npm run sass-watch\" \"npm run serve\" --names \"🍺,💄,🌐\" --prefix name",
+        "build": "concurrently \"npm run gulp\" \"npm run sass\" --names \"🍺,💄\" --prefix name"
+    },
+    "author": "Enamul Haque",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^8.0.1",
+        "gulp": "^4.0.2",
+        "gulp-clean": "^0.4.0",
+        "gulp-cssbeautify": "^3.0.1",
+        "gulp-imagemin": "^8.0.0",
+        "gulp-postcss": "^9.0.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-watch": "^5.0.1"
+    },
+    "dependencies": {
+        "browser-sync": "^2.29.1",
+        "concurrently": "^8.0.1",
+        "del": "^7.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-file-include": "^2.3.0",
+        "gulp-html-beautify": "^1.0.1",
+        "gulp-prettify": "^0.5.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-twig": "^1.2.0",
+        "gulp-uglify": "^3.0.2",
+        "live-server": "^1.2.2",
+        "sass": "^1.62.1"
+    }
+}
