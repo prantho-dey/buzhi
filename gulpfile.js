@@ -43,13 +43,6 @@ function imageTask() {
         .pipe(dest('dist/assets/img'))
 }
 
-// js asssets
-function jsDefaultTask() {
-    return src(['./src/assets/js/default/*.js'])
-        .pipe(concat('default.min.js'))
-        .pipe(uglify())
-        .pipe(dest('dist/assets/js'))
-}
 
 function jsPluginsTask() {
     return src(['./src/assets/js/plugin/*.js'])
@@ -57,6 +50,13 @@ function jsPluginsTask() {
         .pipe(uglify())
         .pipe(dest('dist/assets/js'))
 }
+
+function jsDefaultTask(){
+    return src(['./src/assets/js/default/*.js'])
+        .pipe(concat('diffault.min.js'))
+        .pipe(uglify())
+        .pipe(dest('dist/assets/js'))
+  }
 
 // Custom JS task
 function customJsTask() {

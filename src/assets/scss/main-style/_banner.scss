@@ -1,0 +1,63 @@
+
+.banner-area {
+    padding: 10px 0px;
+}
+.banner-wrapper {
+    position: relative;
+}
+.banner-star-shape {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    animation: rotate 2s linear infinite;
+}
+.banner-cercle-shape {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    animation: spinAndScale 2s linear infinite;
+}
+.banner-inner {
+    border: 1px solid var(--primary);
+    padding: 10px;
+    clip-path: polygon(0 0, calc(100% - 130px) 0, 100% 130px, 100% 100%, 130px 100%, 0 calc(100% - 130px));
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: var(--primary);
+        top: 0;
+        left: 0;
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+    }
+}
+.border-bottom-angle,
+.border-top-angle {
+    position: absolute;
+    content: "";
+    width: 130px;
+    height: 130px;
+    clip-path: polygon(100% 100%, 100% calc(100% - 2px), 2px 0, 0 0);
+    background-color: var(--primary);
+}
+.border-top-angle {
+    top: 0px;
+    right: 0px;
+}
+.border-bottom-angle {
+    left: 0;
+    bottom: 0;
+}
+
+.banner-text-image {
+    svg {
+       width: 100%; 
+       max-width: 1768px;
+       max-height: 100%;
+       margin-top: 15px;
+    }
+}
