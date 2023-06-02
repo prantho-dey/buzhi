@@ -26,3 +26,62 @@
 }
 
 
+@keyframes downMoving {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+@keyframes downMovingReverse {
+    from {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+@keyframes downMovingLeftRight {
+    0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+}
+
+@keyframes animateHeart {
+    // scale down and scale up faster in irregular intervals to get the throbbing effect
+    0% {
+      transform: scale(0.8);
+    }
+    5% {
+      transform: scale(0.9);
+    }
+    10% {
+      transform: scale(0.8);
+    }
+    15% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+
+
+  @keyframes zoomInOut {
+    from {
+        transform: scale(.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}

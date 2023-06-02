@@ -4,6 +4,29 @@
 }
 .banner-wrapper {
     position: relative;
+    z-index: 1;
+    .banner-bg-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        animation: zoomInOut 5s linear infinite alternate;
+    }
+
+    // &::before {
+    //     position: absolute;
+    //     content: "";
+    //     z-index: -1;
+    //     background: linear-gradient(27.77deg, #1A1A1A 13.74%, #1E1D19 22.35%, #2B2618 31.68%, #413516 41.73%, #604B14 51.77%, #886711 61.82%, #B9890D 72.58%, #F1B009 83.34%, #FFBA08 85.5%);
+    //     filter: blur(42.4508px);
+    //     top: 0;
+    //     right: 0;
+    //     height: 1037px;
+    //     width: 1037px;
+    //     border-radius: 100%;
+    //     // animation: rotate 50s linear infinite;
+
+    // }
 }
 .banner-star-shape {
     position: absolute;
@@ -22,6 +45,8 @@
 .banner-inner {
     border: 1px solid var(--primary);
     padding: 10px;
+    padding-bottom: 0;
+    padding-right: 0;
     clip-path: polygon(0 0, calc(100% - 130px) 0, 100% 130px, 100% 100%, 130px 100%, 0 calc(100% - 130px));
     position: relative;
     &::before {
@@ -54,10 +79,178 @@
 }
 
 .banner-text-image {
+    padding-right: 10px;
     svg {
        width: 100%; 
        max-width: 1768px;
        max-height: 100%;
        margin-top: 15px;
+    }
+}
+
+// Responsive 
+@media screen and (max-width: 767px) {
+    .border-bottom-angle, 
+    .border-top-angle {
+        width: 68px;
+        height: 68px;
+    }
+    .banner-inner {
+        clip-path: polygon(0 0, calc(100% - 68px) 0, 100% 68px, 100% 100%, 68px 100%, 0 calc(100% - 68px));
+    }
+    .banner-cercle-shape,
+    .banner-star-shape {
+        width: 30px;
+    }
+}
+
+// Nivesting Style Start here ==========
+.investing-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    position: relative;
+}
+
+.investing-left {
+    position: absolute;
+    bottom: -1px;
+    left: -10px;
+    img {
+        // animation: downMovingReverse 1s linear infinite alternate;
+    }
+    h6 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 122.5%;
+        text-transform: uppercase;
+        color: #FFBA08;
+        transform: rotate(-90deg) translateX(37px);
+    }
+}
+
+.investing-right {
+    max-width: 974px;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    margin-top: 40px;
+    .plus-shape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: rotate 1s linear infinite;
+    }
+    .investing-angle {
+        position: absolute;
+        content: "";
+        width: 85px;
+        height: 85px;
+        background-color: var(--primary);
+        top: 0;
+        left: 0;
+        clip-path: polygon(calc(100% - 1px) 0, 100% 1%, 1% 100%, 0 calc(100% - 1px));
+    }
+    .dots-group-shape {
+        position: absolute;
+        bottom: 10px;
+        left: -14%;
+        animation: downMovingLeftRight 5s linear infinite;
+        svg {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+.investing-right-inner {
+    border-left: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
+    padding: 30px 27px;
+
+    clip-path: polygon(calc(10% - 13px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 74px));
+    h4 {
+        max-width: 757px;
+        margin-left: auto;
+        text-align: right;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 97%;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+// Disover Area Style Start Here =======================
+.discover-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 75px 0px;
+    padding-left: 150px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: calc(100% + 20px);
+        height: 1px;
+        top: 0;
+        left: -10px;
+        background-color: var(--primary);
+    }
+    > img {
+        position: absolute;
+        z-index: 1;
+        right: 18px;
+        bottom: 18px;
+        animation: downMoving 1s infinite;
+    }
+}
+
+.discover-left {
+    max-width: 755px;
+    width: 100%;
+    h4 {
+        font-size: 36px;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-family: var(--playsans-bulky);
+        span {
+            display: block;
+            margin-left: 35px;
+        }
+    }
+    p {
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-top: 35px;
+        span {
+            display: inline-block;
+            width: 35px;
+        }
+    }
+}
+
+.discover-right {
+    max-width: 755px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    svg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: calc(100% + 150px);
+        top: -75px;
+        left: 0;
+        background-color: var(--primary);
     }
 }
