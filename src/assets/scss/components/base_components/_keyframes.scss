@@ -3,19 +3,16 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
 @keyframes downRight {
     0%, 100% { transform: translateX(0) translateY(0); }
     50% { transform: translateX(20px) translateY(20px); }
 }
-
 @keyframes spinAndScale {
     0% { transform: rotate(0deg) scale(1.0); }
     10% { transform: rotate(10deg) scale(1.1); }
     50% { transform: rotate(180deg) scale(1.2); }
     100% { transform: rotate(360deg) scale(1.0); }
 }
-
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -24,8 +21,6 @@
         transform: rotate(360deg);
     }
 }
-
-
 @keyframes downMoving {
     from {
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -53,7 +48,6 @@
         clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
     }
 }
-
 @keyframes animateHeart {
     // scale down and scale up faster in irregular intervals to get the throbbing effect
     0% {
@@ -74,14 +68,20 @@
     100% {
       transform: scale(0.8);
     }
-  }
-
-
-  @keyframes zoomInOut {
+}
+@keyframes zoomInOut {
     from {
         transform: scale(.9);
     }
     to {
         transform: scale(1);
+    }
+}
+@keyframes upsDown {
+    from {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }

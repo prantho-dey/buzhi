@@ -67,4 +67,16 @@ anime({
     loop: true
 });
 
+// Nice Scroll
+// $(document).ready(function() {
+//     $("html").niceScroll({cursorwidth: '5px', autohidemode: false, zindex: 999 });
+// });
+
+
+// Map Rotate 
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "./../img/map.png",
+    "autoLoad": true,
+});
 

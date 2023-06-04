@@ -19,6 +19,7 @@
 // Main Style Start Here
 @import "./main-style/header";
 @import "./main-style/banner";
+@import "./main-style/our-approach";
 
 
 
@@ -103,4 +104,12 @@
     font-weight: 300;
     font-style: italic;
     font-display: swap;
+}
+
+
+.nicescroll-rails {
+    > div {
+        border: 1px solid var(--primary) !important;
+        background-color: black;
+    }
 }
