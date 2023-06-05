@@ -51,7 +51,7 @@ anime({
     targets: '#banner-text-underline path',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
-    duration: 1500,
+    duration: 2000,
     delay: function(el, i) { return i * 250 },
     direction: 'alternate',
     loop: true
@@ -66,17 +66,17 @@ anime({
     direction: 'alternate',
     loop: true
 });
+anime({
+    targets: '#exprienct-txt-shape path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 10000,
+    delay: function(el, i) { return i * 250 },
+    direction: 'alternate',
+    loop: true
+});
 
 // Nice Scroll
 // $(document).ready(function() {
 //     $("html").niceScroll({cursorwidth: '5px', autohidemode: false, zindex: 999 });
 // });
-
-
-// Map Rotate 
-pannellum.viewer('panorama', {
-    "type": "equirectangular",
-    "panorama": "./../img/map.png",
-    "autoLoad": true,
-});
-

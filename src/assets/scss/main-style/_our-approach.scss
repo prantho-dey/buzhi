@@ -142,6 +142,7 @@
 }
 
 // https://www.youtube.com/watch?v=eiX7451Bqyg
+
 .our-approach-map {
     max-width: 600px;
     max-height: 600px;
@@ -152,7 +153,7 @@
     border-radius: 100%;
     position: relative;
     img {
-        animation: rotate 100s linear infinite;
+        animation: rotate 100s linear infinite reverse;
     }
     &::after,
     &::before {
@@ -171,10 +172,87 @@
         top: 100%;
     }
 }
-
-#panorama {
-    width: 600px;
-    height: 600px;
+@media screen and (max-width: 1300px) {
+    .our-approach-wrapper {
+        gap: 40px;
+    }
 }
 
+@media screen and (max-width: 1199px) {
+    .our-approach-area {
+        padding: 40px 0px 0px;
+    }
+    .our-approach-wrapper {
+        flex-direction: column;
+    }
+    .our-approach-map-wrap {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+            position: absolute;
+            content: "";
+            width: calc(100% + 40px);
+            height: 1px;
+            background-color: var(--primary);
+            top: 0;
+            left: -20px;
+        }
+    } 
+    .our-approach-map {
+        position: relative;
+        margin: 40px 0px;
+        &::before,
+        &::after {
+            height: 40px;
+        }
+    }
+}
 
+@media screen and (max-width: 991px) {
+    .approach-items {
+        gap: 40px;
+    }
+    .approach-items-inner {
+        grid-gap: 40px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .approach-items {
+        flex-direction: column;
+    }
+    .single-approach-item {
+        max-width: 100%;
+    }
+    .our-approach-content {
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .our-approach-title {
+        gap: 15px;
+        .shpae {
+            svg {
+                width: 24px;
+                margin-left: -10px;
+            }
+        }
+        h2 {
+            font-size: 26px;
+        }
+    }
+    .single-approach-item {
+        .content {
+            h4 {
+                font-size: 18px;
+                border-width: 1px;
+            }
+            p {
+                margin-top: 15px;
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+
+.experince-wrapper {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 142px;
+        height: 142px;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background-color: var(--primary);
+        clip-path: polygon(calc(100% - 1px) 0, 100% 0, 100% 1px, 1px 100%, 0 100%, 0 calc(100% - 1px));
+    }
+    .shape {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 88px;
+        height: 88px;
+        overflow: hidden;
+        &::before {
+            position: absolute;
+            content: "";
+            width: calc(100% - 30px);
+            height: calc(100% - 30px);
+            z-index: -1;
+            top: 0;
+            left: 0;
+            border: 15px solid var(--primary);
+        }
+        img {
+            animation: rotate 10s linear infinite;
+        }
+    }
+}
+.experince-wrap {
+    border: 1px solid var(--primary);
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 142px), calc(100% - 142px) 100%, 0 100%, 0% 50%);
+}
+
+
+.experince-thumb {
+    padding: 40px;
+    max-width: 750px;
+    width: 100%;
+    border-right: 1px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.experince-content {
+    padding: 40px 90px 40px;
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        img {
+            animation: downMoving 2s linear infinite;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 97%;
+            text-transform: uppercase;
+            span {
+                display: block;
+                margin-left: 130px;
+            }
+        }
+    }
+    .content {
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        gap: 18px 11px;
+        flex-wrap: wrap;
+        a {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 110%;
+            color: #FFBA08;
+            svg {
+                width: 23px;
+                height: 30px;
+            }
+        }
+    }
+}
