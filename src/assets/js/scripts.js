@@ -48,7 +48,7 @@
 
 
 anime({
-    targets: '#banner-text-underline path',
+    targets: '.banner-text-underline path',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
     duration: 2000,

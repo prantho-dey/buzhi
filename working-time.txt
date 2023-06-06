@@ -5,3 +5,4 @@ Date               Time
 03-06-2023       3 hour 10 minute
 05-06-2023       4 hour 40 minute
 06-06-2023       3 hour
+07-06-2023       4 hour
