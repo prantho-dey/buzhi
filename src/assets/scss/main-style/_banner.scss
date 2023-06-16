@@ -12,21 +12,6 @@
         z-index: -1;
         animation: zoomInOut 5s linear infinite alternate;
     }
-
-    // &::before {
-    //     position: absolute;
-    //     content: "";
-    //     z-index: -1;
-    //     background: linear-gradient(27.77deg, #1A1A1A 13.74%, #1E1D19 22.35%, #2B2618 31.68%, #413516 41.73%, #604B14 51.77%, #886711 61.82%, #B9890D 72.58%, #F1B009 83.34%, #FFBA08 85.5%);
-    //     filter: blur(42.4508px);
-    //     top: 0;
-    //     right: 0;
-    //     height: 1037px;
-    //     width: 1037px;
-    //     border-radius: 100%;
-    //     // animation: rotate 50s linear infinite;
-
-    // }
 }
 .banner-star-shape {
     position: absolute;
@@ -370,7 +355,7 @@
         padding-right: 20px;
         padding: 20px 20px 20px 10px;
         h4 {
-            font-size: 22px;
+            font-size: 30px;
         }
     }
     .discover-right {
@@ -388,6 +373,11 @@
     .discover-wrapper {
         >img {
             display: none;
+        }
+    }
+    .discover-left {
+        h4 {
+            font-size: 24px;
         }
     }
 }

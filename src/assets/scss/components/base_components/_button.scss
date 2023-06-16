@@ -7,30 +7,3 @@ button {
         box-shadow: none;
     }
 }
-
-// .btn {
-//     padding: 15px 30px;
-//     line-height: 1;
-//     font: {
-//         weight: var(--medium);
-//         size: 17px;
-//     }
-//     vertical-align: middle;
-//     color: var(--white);
-//     @include transition(.3s);
-//     cursor: pointer;
-//     text-transform: capitalize;
-//     background-color: var(--theme-clr);
-//     border: 1px solid transparent;
-//     border-radius: var(--border-radius);
-//     &:focus {
-//         outline: 0;
-//         box-shadow: none;
-//     }
-//     svg {
-//         path {
-//             @include transition(.3s);
-//         }
-//     }
-// }
-

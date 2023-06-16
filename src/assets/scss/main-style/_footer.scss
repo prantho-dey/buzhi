@@ -1,0 +1,107 @@
+
+.footer-area {
+    padding: 20px 0px;
+    position: relative;
+    z-index: 1;
+    .footer-shape {
+        position: absolute;
+        content: "";
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.footer-image-text {
+    display: flex;
+    gap: 20px;
+    img {
+        animation: waviy 2s infinite;
+        animation-delay: calc(.1s * var(--i));
+    }
+}
+
+.footer-social {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid var(--primary);
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid var(--primary);
+        padding: 25px 0px;
+        &:last-child {
+            border-right: none;
+        }
+        a {
+            display: block;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 110%;
+            text-transform: uppercase;
+            font-family: var(--playsans-bulky);
+        }
+    }
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     gap: 30px;
+    img {
+        animation: downMoving 5s linear infinite;
+    }
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 122.5%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFBA08;
+    }
+}
+
+// Responsive 
+@media screen and (max-width: 1199px) {
+    .footer-social {
+        li {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer-social {
+        grid-template-columns: 1fr;
+        li {
+            border-right: none;
+            border-bottom: 1px solid var(--primary);
+            padding: 15px 0px;
+            &:last-child {
+                border-bottom: none;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+    .footer-bottom {
+        margin-top: 30px;
+        gap: 10px;
+    }
+    .footer-image-text {
+        gap: 7px;
+    }
+    .footer-bottom {
+        p {
+            font-size: 12px;
+        }
+    }
+}

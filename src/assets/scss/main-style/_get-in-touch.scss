@@ -1,6 +1,7 @@
 
 .get-in-touch-area {
     margin-top: 20px;
+    
 }
 
 .get-in-touch-wrapper {
@@ -15,6 +16,13 @@
         z-index: 1;
         background-color: var(--primary);
         clip-path: polygon(0 0, 1px 0, 100% calc(100% - 1px), 100% 100%, calc(100% - 1px) 100%, 0 1px);
+    }
+    .shape {
+        position: absolute;
+        content: "";
+        right: 0px;
+        top: -50px;
+        animation: cliLeftRight 1s linear infinite alternate;
     }
 }
 .get-in-touch-wrap {
@@ -70,32 +78,28 @@
 .get-in-touch-mail-wrap {
     position: relative;
     margin-top: 30px;
-    // img {
-    //     position: absolute;
-    //     content: "";
-    //     width: 100%;
-    //     height: 100%;
-    //     top: 0;
-    //     left: 0;
-    //     z-index: 1;
-    // }
-    &::before,
-    &::after {
+    display: inline-block;
+    padding: 0px 10px;
+    span {
         position: absolute;
         content: "";
-        z-index: 2;
-        width: 50px;
+        width: 15px;
         height: 100%;
         top: 0;
-        border: 2px solid var(--primary);
-        border-radius: 10px;
+        border-top: 2px solid var(--primary);
+        border-bottom: 2px solid var(--primary);
     }
-    &::before {
+    .get-in-tuch-left-shape {
         left: 0;
+        border-left: 2px solid var(--primary);
+        border-radius: 8px 0px 0px 8px;
+        clip-path: polygon(100% 15px, 0 15px, 0 0, 16% 0, 88% 0, 100% 0, 100% 100%, 78% 100%, 4% 100%, 0 100%, 0 calc(100% - 16px), 41% 91%);
     }
-    &::after {
+    .get-in-tuch-right-shape {
         right: 0;
-        clip-path: polygon(86% 0, 100% 0, 100% 15%, 89% 16%, 89% 86%, 100% 86%, 100% 100%, 86% 100%);
+        border-right: 2px solid var(--primary);
+        border-radius: 0px 8px 8px 0px;
+        clip-path: polygon(100% 0, 100% 15px, 84% 15px, 77% calc(100% - 15px), 100% calc(100% - 15px), 114% 100%, 0 100%, 0 0);
     }
 }
 .get-in-touch-mail {
@@ -103,6 +107,99 @@
     font-size: calc(20px + 8.5vw);
     font-family: var(--playsans-bulky);
     font-weight: 700;
-    line-height: 110%;
-    padding-left: 10px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 1575px) {
+    .get-in-touch-mail {
+        font-size: calc(20px + 8vw);
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .get-in-touch-mail {
+        font-size: calc(20px + 7vw);
+    }
+}
+@media screen and (max-width: 991px) {
+    .get-in-touch-mail {
+        font-size: calc(20px + 6vw);
+    }
+    .get-in-touch-title {
+        align-items: flex-start;
+        .content-inner {
+            align-items: flex-start;
+            gap: 20px;
+            flex-direction: column;
+            position: relative;
+        }
+    }
+    .get-in-touch-wrapper {
+        &::before {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .get-in-touch-wrap {
+        clip-path: polygon(calc(100% - 50px) 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+    }
+}
+@media screen and (max-width: 767px) {
+    .get-in-touch-mail {
+        font-size: calc(20px + 5vw);
+    }
+    .get-in-touch-title {
+        .content-inner {
+            h2 {
+                font-size: 30px;
+                span {
+                    margin-left: 40px;
+                }
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .get-in-touch-wrap {
+        padding: 20px;
+    }
+    .get-in-touch-title {
+        gap: 20px;
+        > img {
+            width: 50px;
+        }
+        .content-inner {
+            h2 {
+                font-size: 24px;
+                line-height: 1.2;
+                span {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .get-in-touch-mail {
+        font-size: 8vw;
+    }
+    .get-in-touch-mail-wrap {
+        span {
+            width: 10px;
+        }
+        .get-in-tuch-left-shape {
+            clip-path: polygon(100% 10px, 0 10px, 0 0, 16% 0, 88% 0, 100% 0, 100% 100%, 78% 100%, 4% 100%, 0 100%, 0 calc(100% - 10px), 41% 91%);
+        }
+        .get-in-tuch-right-shape {
+            right: 0;
+            border-right: 2px solid var(--primary);
+            border-radius: 0px 8px 8px 0px;
+            clip-path: polygon(100% 0, 100% 10px, 84% 15px, 77% calc(100% - 10px), 100% calc(100% - 10px), 114% 100%, 0 100%, 0 0);
+        }
+    }
+    .get-in-touch-wrapper .shape {
+        top: -40px;
+        width: 30px;
+    }
 }

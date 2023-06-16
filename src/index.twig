@@ -3,7 +3,6 @@
 <!-- Header  -->
 {% include "elements/header.twig" %}
 
-
 <main>
     <!-- Banner Area Start -->
     <section class="banner-area">
@@ -65,7 +64,10 @@
     <!-- Banner Area End -->
 
     <!-- Our Approach Area Start -->
-    <div class="our-approach-area">
+    <section class="our-approach-area" id="approach">
+        <div class="dots-group-shape">
+            {% include "elements/svg/dots-group-shape.twig" %}
+        </div>
         <div class="container">
             <div class="our-approach-wrapper">
                 <div class="our-approach-content">
@@ -125,11 +127,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Our Approach Area End -->
 
     <!-- Our Experince Area Start -->
-    <div class="experince-area">
+    <section class="experince-area" id="exprience">
         <div class="container">
             <div class="experince-wrapper">
                 <div class="experince-wrap">
@@ -222,13 +224,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Our Experince Area End -->
 
     <!-- Get In Touch Area Start -->
-    <div class="get-in-touch-area">
+    <section class="get-in-touch-area" id="getInTouch">
         <div class="container">
             <div class="get-in-touch-wrapper">
+                <img src="./assets/img/shape/get-in-tuch.svg" alt="shape" class="shape">
                 <div class="get-in-touch-wrap">
                     <div class="get-in-touch-title">
                         <img src="./assets/img/all-svg/get-in-touch-title-shape.svg" alt="get-in-touch-shape">
@@ -242,54 +245,173 @@
                     </div>
                     <div class="get-in-touch-mail-wrap">
                         <a class="get-in-touch-mail" href="#">hello@buzhi.capital</a>
-                        <!-- <img src="./assets/img/get-in-touch-text-shape.png" alt="text-shape"> -->
+                        <span class="get-in-tuch-left-shape"></span>
+                        <span class="get-in-tuch-right-shape"></span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Get In Touch Area End -->
 
+    <!-- Journal Area Start -->
+    {% include "elements/short-elements/journal.twig" %}
+    <!-- Journal Area End -->
+
+    <!-- Team Area Start -->
+    <section class="team-area" id="team">
+        <div class="container">
+            <div class="team-wrapper">
+                <img class="plus-shape" src="./assets/img/shape/plus.svg" alt="shape">
+                <div class="team-wrapper-inner">
+                    <div class="team-title">
+                        <h2>team</h2>
+                        <img src="./assets/img/team/title-shape.svg" alt="title-shape">
+                    </div>
+                    <div class="team-member-wrap">
+                        <!-- shapes Start -->
+                        <span class="underline-top">
+                            {% include "elements/svg/banner-text-underline.twig" %}
+                        </span>
+                        <span class="underline-middle">
+                            {% include "elements/svg/team-middle-underline.twig" %}
+                        </span>
+                        <span class="underline-bottom">
+                            {% include "elements/svg/banner-text-underline.twig" %}
+                        </span>
+                        <!-- shapes End -->
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-01.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-02.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-shape">
+                            <img src="./assets/img/team/shape-01.svg" alt="shape">
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-03.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-04.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-05.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-shape">
+                            <img src="./assets/img/team/shape-02.svg" alt="shape">
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-06.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-shape-3">
+                            <img src="./assets/img/team/shape-03.svg" alt="shape">
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-07.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-shape-4">
+                            <img src="./assets/img/team/shape-04.svg" alt="shape">
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-08.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-shape">
+                            <img src="./assets/img/team/shape-05.svg" alt="shape">
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-09.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                        <div class="single-team-member">
+                            <div class="thumb">
+                                <div class="thumb-inner">
+                                    <img src="./assets/img/team/member-10.png" alt="team-member">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6><a href="#">Mora Sierra</a></h6>
+                                <p>[founder]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Area End -->
 </main>
-    
-
-<p style="margin-top: 100px; opacity: 0;">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis voluptatem corrupti perspiciatis optio. Voluptates repellendus nesciunt officia quia perspiciatis aut eum earum dolorem vitae fugiat, quos doloremque ad. Omnis!
-</p>
-
-
 
 <!-- Footer -->
 {% include "elements/footer.twig" %}

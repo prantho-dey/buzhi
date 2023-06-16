@@ -1,0 +1,85 @@
+<!-- Header Link -->
+{% include "elements/header-link.twig" with {'class': 'blog-home'} %}
+<!-- Header  -->
+{% include "elements/header.twig" %}
+
+<main>
+
+    <!-- Blog Area Start -->
+    <div class="blog-area">
+        <div class="container">
+            <div class="blog-wrapper">
+                <img class="star-shape" src="./assets/img/shape/star-shape.svg" alt="shape">
+                <div class="blog-wrap">
+                    <div class="blog-top">
+                        <div class="explore">
+                            <h6>scroll to <br>explore</h6>
+                            <img src="./assets/img/shape/investing-shape-01.svg" alt="investing">
+                        </div>
+                        <div class="blog-top-inner">
+                            {% include "elements/svg/dots-group-shape.twig" %}
+                            <span>Wednesday, April 10, 2019</span>
+                            <h1>Introducing Buzhi: A New Frontier in Early-Stage Tech Investments</h1>
+                        </div>
+                    </div>
+                    <!-- Blog Exprience -->
+                    <div class="blog-exp-wrpper">
+                        <div class="blog-exp-inner">
+                            <div class="blog-exp-thumb">
+                                <img src="./assets/img/team/shape-02.svg" alt="blog">
+                            </div>
+                            <div class="blog-exp-content">
+                                <p>As experienced entrepreneurs and pioneers in the early days of the crypto industry, we, Manuel Araoz (@maraoz) and Martin (@0xtoucan), understand firsthand the challenges and rewards of pushing the boundaries of technology.</p>
+    
+                                <p>Now, we are thrilled to channel our passion and expertise into Buzhi, a venture that supports those who dare to explore the unknown.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Banner -->
+                    <div class="blog-banner">
+                        <img src="./assets/img/blog-banner.jpg" alt="blog-banner">
+                    </div>
+                    <!-- Details -->
+                    <div class="blog-details-wrap">
+                        <div class="blog-details">
+                            <p>Welcome to Buzhi, where we invest in the unknown and explore the uncharted territories of technology. As we embark on this exciting journey, we are thrilled to introduce our mission and the guiding principles that drive us.</p>
+    
+                            <p>At Buzhi, we firmly believe that the most revolutionary technological breakthroughs emerge at the fringes of human knowledge. Our mission is to support visionary founders worldwide who are unafraid to play with technology, even when the end goal remains unclear.</p>
+    
+                            <p>We understand the challenges of pioneering new ideas, and we're committed to providing a helping hand through early-stage investments, hands-on collaboration, and problem-solving. Our experience with industry leaders such as OpenZeppelin, Decentraland, The Graph, and Fundit, to name a few, has honed our expertise and equipped us with the knowledge to nurture groundbreaking ventures.</p>
+    
+                            <h4>Our Investment Philosophy</h4>
+                            <p>Our focus lies in seed or pre-seed investments, which we exchange for equity or crypto-tokens. We believe that by investing in the earliest stages, we can provide the necessary resources and support for founders to bring their innovative ideas to life.</p>
+    
+                            <h4>Building Strong Communities</h4>
+                            <p>A robust community is essential for the success of any technological venture. At Buzhi, we work side-by-side with our partners, tinkering with their tech, and helping them foster a thriving community that shares their vision.</p>
+    
+                            <h4>Tackling Challenges Together</h4>
+                            <p>Innovation doesn't come without its fair share of obstacles. We collaborate with founders to address complex problems and conduct adversarial audits of their technology, ensuring the highest quality and resilience in the face of adversity.</p>
+    
+                            <p>As we venture into the unknown, we invite you to join us on this journey. If you're working on a groundbreaking idea or technology, don't hesitate to contact us. Together, we can navigate the uncharted waters of technological innovation and discover the next frontier.</p>
+    
+                            <p>Stay tuned for more updates and insights from the Buzhi team by following our blog and subscribing to our newsletter.</p>
+    
+                            <div class="author">
+                                <span>Welcome aboard! </span>
+                                <span>Manuel and Martín</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Area End -->
+
+    <!-- Journal Area Start -->
+    {% include "elements/short-elements/journal.twig" %}
+    <!-- Journal Area End -->
+
+</main>
+
+<!-- Footer -->
+{% include "elements/footer.twig" %}
+<!-- Footer script-->
+{% include "elements/footer-script.twig" %}

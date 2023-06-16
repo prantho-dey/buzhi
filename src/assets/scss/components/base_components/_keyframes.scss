@@ -85,3 +85,19 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
+@keyframes cliLeftRight {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-15px)
+    }
+}

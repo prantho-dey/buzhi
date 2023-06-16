@@ -2,11 +2,9 @@
 
 //1.base_components file css call here
 //------------------------------
-@import "components/base_components/mixin";
 @import "components/base_components/container";
 @import "components/base_components/svg-icon";
 @import "components/base_components/button";
-@import "components/base_components/common";
 @import "components/base_components/keyframes";
 
 
@@ -22,6 +20,10 @@
 @import "./main-style/our-approach";
 @import "./main-style/our-expreince";
 @import "./main-style/get-in-touch";
+@import "./main-style/journal";
+@import "./main-style/team-member";
+@import "./main-style/blog";
+@import "./main-style/footer";
 
 
 
@@ -108,7 +110,9 @@
     font-display: swap;
 }
 
-
+// html {
+//     scroll-behavior: smooth;
+// }
 .nicescroll-rails {
     > div {
         border: 1px solid var(--primary) !important;
